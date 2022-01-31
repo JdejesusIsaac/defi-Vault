@@ -1,15 +1,16 @@
-# Basic Sample Hardhat Project
+Exchange contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Our Exchange contract can accept liquidity from users, calculate prices in a way that protects from draining, and allows users to swap eth for tokens and back.
 
-Try running some of the following tasks:
+Each pair (eth-token) is deployed as an exchange contract and allows to exchange ether to/from only one token.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+
+What’s missing ..
+
+1. Adding new liquidity can cause huge price changes.
+2. Liquidity providers are not rewarded; all swaps are free.
+3. There’s no way to remove liquidity.
+4. No way to swap ERC20 tokens (chained swaps).
+5. Factory is still not implemented.
+
 ```
