@@ -1,6 +1,6 @@
 const Compound = require('@compound-finance/compound-js');
 
-const providerUrl = 'https://eth-rinkeby.alchemyapi.io/v2/LWrgmpDRxzx8tSCR6qkS4q4BOqn0bBUn';
+const providerUrl = '';
 
 // Your Ethereum wallet and private key
 const myWalletAddress = ""
